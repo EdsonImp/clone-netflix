@@ -1,0 +1,180 @@
+:root{
+    --vermelho: #E50914;
+    --preta: Black;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Básicos */
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+header .container{
+    display: grid;
+    grid-template-columns: 10% 60% 20%;
+    align-items: center;
+ }
+header .logo{
+    display: flex;
+ }
+
+.navegacao{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.itens-a-direita{
+    display: flex;
+    align-items: center;
+ 
+ }
+ .icones-superior-direita{
+     width: 70px;
+     margin-left: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    
+ }
+.busca{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    height: 25px;
+    width: 100px;
+    color: #AAA;
+    
+}
+.busca:hover{
+    background-color: rgb(48, 36, 36);
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #FFF;
+}
+
+
+/* Corpo principal*/
+.principal{
+    background: url(/img/principal1.jpg) no-repeat;
+    height: 600px;
+    background-size: cover;
+  }
+
+
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+   
+
+}
+main .principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .titulo{
+    font-size: 60px;
+    margin-bottom: 10px;
+    
+}
+main .descricao{
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 50%;
+   
+}
+.fonte-genero{
+    font-family: Arial, Helvetica, sans-serif;
+   margin-left: 10px;
+   color: #AAA;
+}
+
+
+main .botao{
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: rgba(15, 15, 59, 0.55);
+    color: white;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+main .botao:hover{
+    background-color: rgba(240, 240, 227, 0.4);
+    color: #141414;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/*Rodapé*/
+footer .container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    color: rgb(128, 125, 125);
+    cursor: pointer;
+}
+footer .icones-redes a{
+    color: rgb(128, 125, 125);
+}
+footer p{
+    cursor: pointer;
+}
+footer p:hover{
+    color: white;
+}
+
+.caixa1{
+    
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    justify-content: space-between;
+}
+.p5-borda{
+    border: 1px solid rgb(128, 125, 125);
+    width: 180px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+.icones-redes{
+    display: flex;
+    width: 250px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    font-size: 20px;
+    color: rgb(128, 125, 125);
+}
+.icones-redes i:hover {
+    color: white;
+    cursor: pointer;
+}
+.caixas{
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: space-between;
+   
+}
